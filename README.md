@@ -1,2 +1,2 @@
-# full-stack-study
+# bantr
 Project 2 | Group 4
