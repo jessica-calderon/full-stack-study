@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000', { transports : ['websocket'] });
+const socket = io(); //TODO: auto get URL because it wont be the heroku URL
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')

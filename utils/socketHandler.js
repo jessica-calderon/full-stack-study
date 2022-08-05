@@ -1,12 +1,10 @@
-var app  = require('express')();
-var http = require('http').Server(app);
-var io   = require('socket.io')(http, {cors: {origin: "http://localhost:3000", method: ["GET", "POST"]}});
-var port = process.env.PORT || 8080;
+var { server, app } = require('./expressHandler')
 
-
+var io = require('socket.io')(server); // {cors: {origin: "http://localhost:3000", method: ["GET", "POST"]}}
 const users = {}
 
 io.on('connection', socket => {
+console.log("New connection?");
   socket.on('new-user', name => {
     users[socket.id] = name
     socket.broadcast.emit('user-connected', name)
@@ -19,3 +17,5 @@ io.on('connection', socket => {
     delete users[socket.id]
   })
 })
+
+module.exports = { io };
