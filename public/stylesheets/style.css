@@ -19,6 +19,9 @@ main {
   flex: 1;
   padding: 2% 4%;
 }
+.bg-message {
+  background-color: #8ea4d2;
+}
 .navbar.center .navbar-inner {
   text-align: center;
 }
@@ -26,4 +29,12 @@ main {
 .navbar.center .navbar-inner .nav {
   display:inline-block;
   float: none;
+}
+.avatar-container {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #8ea4d2;
+  padding: 2px;
+  background-color: #496f5d;
 }
