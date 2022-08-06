@@ -1,5 +1,17 @@
+/*
+    Group.js
+    Harrison L. (@Stratiz)
+    Created on 08/06/2022 @ 05:17:16
+    
+    Description:
+        Module for constructing the group class
+    
+    Documentation:
+        new Group(title : string, memberLimit : number?, password : string?) : Group
+*/
+
 const { randomUUID } = require('crypto'); 
-const { listeners } = require('./ListenerManager');
+const { listenerSockets } = require('../listenerManager');
 
 class Group {
     users = [];
@@ -13,7 +25,7 @@ class Group {
     }
 
     #sendData(name, data) {
-        for (let listener of listeners) {
+        for (let listener of listenerSockets) {
             if (listener.groupId == this.id) {
                 listener.socket.emit(name, data);
             }

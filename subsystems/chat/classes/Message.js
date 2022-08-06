@@ -1,3 +1,16 @@
+/*
+    Message.js
+    Harrison L. (@Stratiz)
+    Created on 08/06/2022 @ 05:28:59
+    
+    Description:
+        Module for constructing the message class
+    
+    Documentation:
+        new Message(sender : User, content : string) : Message
+
+*/
+
 const filter = require("../filter")
 
 class Message {
@@ -7,7 +20,7 @@ class Message {
 
     constructor(owner, content) {
         this.owner = owner;
-        this.content = filter.filterString(content);
+        this.content = filter.filterString(content || "");
     }
 
     export() {

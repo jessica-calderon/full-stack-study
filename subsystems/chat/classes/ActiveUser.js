@@ -1,6 +1,19 @@
+/*
+    ActiveUser.js
+    Harrison L. (@Stratiz)
+    Created on 08/06/2022 @ 05:15:39
+    
+    Description:
+        module for constructing the active user class
+    
+    Documentation:
+        new User(cookie : string) : User
+*/
+
 const Message = require("./Message");
 const { randomUUID } = require('crypto'); 
 
+// Active user class
 class ActiveUser {
     openConnections = 1;
     socket;
