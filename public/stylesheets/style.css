@@ -1,0 +1,32 @@
+body,
+html {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #49516f;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+
+ul {
+  list-style: none;
+}
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+.bg-message {
+  background-color: #8ea4d2;
+}
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  display: inline-block;
+  float: none;
+}
