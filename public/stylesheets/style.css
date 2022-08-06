@@ -1,5 +1,5 @@
-
-body, html {
+body,
+html {
   width: 100vw;
   min-height: 100vh;
   background-color: #49516f;
@@ -9,7 +9,7 @@ a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  transition: color .1s;
+  transition: color 0.1s;
 }
 
 ul {
@@ -27,14 +27,50 @@ main {
 }
 
 .navbar.center .navbar-inner .nav {
-  display:inline-block;
+  display: inline-block;
   float: none;
 }
-.avatar-container {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #8ea4d2;
-  padding: 2px;
+.typing-area {
+  margin-top: 4px;
+  padding: 4px;
+  height: 3%;
+}
+.typing-box {
+  width: 70%;
+  height: 10%;
+  resize: none;
+  padding: 3px;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  border: 1px solid #49516f;
+  position: absolute;
+  bottom: 0px;
+}
+.send-button {
   background-color: #496f5d;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 7px;
+  padding-left: 7px;
+  margin-right: 5px;
+}
+.message-box {
+  margin-top: 10px;
+}
+.others-message-box {
+}
+.my-message-box {
+  text-align: right;
+  background: white;
+}
+.message {
+  max-width: 70%;
+  border-radius: 5%;
+  padding: 5px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.my-message {
+  float: right;
+  background: #8ea4d2;
 }
