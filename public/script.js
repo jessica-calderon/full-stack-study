@@ -27,7 +27,16 @@ async function logout() {
 }
 
 // Group functions
+const messageForm = document.getElementById('send-button')
+// const messageInput = document.getElementById('message-input')
+messageForm.addEventListener('click', (e) => {
+  // avoids submit the form and refresh the page
+  e.preventDefault()
+ const newMessage = document.getElementById('message-input')
+console.log(newMessage.value);
+socket.emit('new-message', newMessage.value)
 
+})
 function _joinedGroup(groupData) {
   console.log("Joined group:", groupData);
   if (socket) {
@@ -38,6 +47,10 @@ function _joinedGroup(groupData) {
 
   socket.on("new-message", (messageData) => {
     console.log("New message:", messageData)
+    //addpe
+ 
+    // addMessage({ message: messageData }, true)
+    // messageInput.value = ''
   });
 
   socket.on("user-joined", (userData) => {
