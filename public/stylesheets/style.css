@@ -19,8 +19,11 @@ main {
   flex: 1;
   padding: 2% 4%;
 }
-.bg-message {
+.bg-purple {
   background-color: #8ea4d2;
+}
+.color-purple {
+  color: #8ea4d2;
 }
 .navbar.center .navbar-inner {
   text-align: center;

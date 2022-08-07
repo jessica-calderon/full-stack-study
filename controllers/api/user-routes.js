@@ -1,5 +1,6 @@
 const router = require("express").Router();
-const { User, Post, Comment, Vote } = require("../../models");
+//TODO add vote if model functionality is added
+const { User, Post, Comment } = require("../../models");
 
 // get all users
 router.get("/", (req, res) => {

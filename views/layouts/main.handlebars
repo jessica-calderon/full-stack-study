@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bantr</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BANTR</title>
+  {{!-- stylesheet --}}
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  {{!-- bootstrap cdn --}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    {{!-- font awesome icons cdn --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <navbar></navbar>    
-    <footer></footer>
+  {{!-- navbar (created by ana - github.com/Anitinky13 ) --}}
+<header>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #8EA4D2;">
+            <div class="container-fluid">
+                  <a class="navbar-brand" href="#">BANTR</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  {{!--  add logout/dashboard buttons if logged in, add login button if logged out (jc) --}}
+                {{#if loggedIn}}
+                    <button class="btn btn-secondary ml-auto mr-1"><a href="/dashboard" class="text-white link-white">Dashboard</a></button><button class="btn btn-secondary ml-auto mr-1" id="logout">Logout</button>
+                {{else}}
+                    <button class="btn btn-secondary ml-auto mr-1"><a href="/login" class="text-white link-white">Login</a></button>
+                {{/if}}
 
+{{!-- TODO: can add search functionality later --}}
+                  {{!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary mx-1" type="submit">Search</button>
+                  </form>
+                  <form class="container-fluid justify-content-start">
+                        <button class="btn btn-outline-secondary" type="button">Create Post</button>
+
+                  </form> --}}
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+{{!-- navbar end --}}
+    <main>
+      {{!-- homepage handlebars templates go here dynamically --}}
+      {{{ body }}}
+    </main>
+    {{!--  footer start (can be changed if you want - jc) --}}
+    
+<!-- Footer -->
+<footer class=" text-center text-white bg-purple">
+  <div class="container p-4">
+    <section class="mb-4">
+      {{!-- TODO add github usernames linked to github accts (jc) --}}
+      <p>
+        Group 4 © 2022
+      </p>
+    </section>
+  </div>
+</footer>
+    {{!-- footer end --}}
+  
+  {{!-- load logout.js script if logged in --}}
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+  {{!-- jquery, bootstrap, and font awesome scripts --}}
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
