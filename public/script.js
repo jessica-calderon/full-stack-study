@@ -25,7 +25,7 @@ async function logout() {
     return false
   });
 }
-
+// TODO: add append logic to link front end -jc 8/6
 // Group functions
 const messageForm = document.getElementById('send-button')
 // const messageInput = document.getElementById('message-input')
