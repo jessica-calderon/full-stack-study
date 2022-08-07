@@ -4,14 +4,14 @@ html {
   min-height: 100vh;
   background-color: #49516f;
 }
-
+/* make links not underlined */
 a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   transition: color 0.1s;
 }
-
+/* no bullets on lists */
 ul {
   list-style: none;
 }
@@ -19,12 +19,14 @@ main {
   flex: 1;
   padding: 2% 4%;
 }
+/* add bg and color class for purple we want to use  */
 .bg-purple {
   background-color: #8ea4d2;
 }
 .color-purple {
   color: #8ea4d2;
 }
+/* for navbar  */
 .navbar.center .navbar-inner {
   text-align: center;
 }
@@ -33,23 +35,8 @@ main {
   display: inline-block;
   float: none;
 }
-.typing-area {
-  margin-top: 4px;
-  padding: 4px;
-  height: 3%;
-}
-.typing-box {
-  width: 70%;
-  height: 10%;
-  resize: none;
-  padding: 3px;
-  margin-bottom: 10px;
-  margin-right: 25px;
-  border: 1px solid #49516f;
-  position: absolute;
-  bottom: 0px;
-}
-.send-button {
+
+/* .send-button {
   background-color: #496f5d;
   position: absolute;
   right: 15px;
@@ -76,4 +63,4 @@ main {
 .my-message {
   float: right;
   background: #8ea4d2;
-}
+} */

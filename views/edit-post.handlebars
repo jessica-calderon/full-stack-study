@@ -1,0 +1,33 @@
+<article>
+  <h2>
+    Edit Post
+  </h2>
+  {{!-- start edit post form --}}
+  <form class="edit-post-form">
+    <div>
+        {{!-- edit title input --}}
+      <input name="post-title" type="text" value="{{post.title}}" style="min-width: 100%;" />
+    </div>
+    {{!-- show posted by, show date using date helper, and show # of comments using plural helper --}}
+    <div class="m-1">Posted by you on <i class="fa-solid fa-calendar"></i> {{format_date post.created_at}} | 
+    <i class="fa-solid fa-comment-dots"></i> {{post.comments.length}} <i class="fa-solid fa-comment-dots"></i> {{format_plural "comment" post.comments.length}}
+    </div>
+    {{!-- edit post textarea --}}
+    <div class="m-1">
+      <textarea id="post-text" name="post-text" style="min-width: 100%;">{{post.post_text}}</textarea>
+    </div>
+    <div class="text-center justify-content-center">
+        {{!-- save changes button with floppy disk icon --}}
+      <button type="submit" class="my-1 btn styled-btn btn-secondary">
+        Save Changes <i class="fa-solid fa-floppy-disk"></i>
+      </button>
+      {{!-- delete post button with trash can icon --}}
+      <button type="button" class="my-1 delete-post-btn styled-btn btn btn-danger">Delete Post
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+    </div>
+  </form>
+</article>
+{{!-- link to public edit and delete ajs --}}
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

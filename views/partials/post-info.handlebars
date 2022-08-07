@@ -1,0 +1,23 @@
+<div class="card mx-auto border border-dark my-2">
+  <div class="card-title card-header bg-light">
+    <h3>
+      <a href="/post/{{id}}" class="title-text text-dark link-dark">
+        {{title}}
+      </a>
+    </h3>
+    <div class="card-body border border-dark bg-white">
+      <p class="card-text">
+        {{post_text}}
+      </p>
+    </div>
+    <div class="card-footer bg-light">
+      <small class="text-muted">
+        Posted by {{user.username}} on <i class="fa-solid fa-calendar"></i>
+        {{format_date created_at}} |<a href="/post/{{id}}" class="text-muted">
+          <i class="fa-solid fa-comment-dots"></i>
+          {{comments.length}} {{format_plural "comment" comments.length}}
+        </a>
+      </small>
+    </div>
+  </div>
+</div>
