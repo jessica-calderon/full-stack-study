@@ -18,7 +18,12 @@ var io = require('socket.io')(server); // {cors: {origin: "http://localhost:3000
 
 io.on('connection', socket => {
   console.log("New connection?");
-  listenerManager.addSocket(socket);
+  // listenerManager.addSocket(socket);
+  socket.on('new-message', (msg)=> {
+    console.log(msg)
+    io.emit('new-message', msg);
+  })
+  
 })
 
 module.exports = { io };
