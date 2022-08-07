@@ -1,2 +1,19 @@
-<div>
-</div>
+{{!-- TODO: add dashboard html --}}
+{{!-- NOTE: only insert dashboard html starting at <div class="col mt-4"> --}}
+{{!-- we will need to add an {{#if posts.length}} section to this page too to show any posts the user has made here.... 
+i can help you with this ana -jc  --}}
+{{!-- can be something like this... --}}
+{{#if posts.length}}
+<section>
+  <h2 class="m-3">Your Posts</h2>
+  {{!-- shows all user created posts --}}
+    {{#each posts as |post|}}
+      {{> post-info post}}
+      <div class="card-link">
+            <div class="text-center justify-content-center">
+                {{!-- edit post button, takes to edit post page --}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link link-danger text-danger"><button class="btn styled-btn btn-outline-danger">Edit post <i class="fa-solid fa-pen-to-square"></i></button></a></div>
+      </div>
+    {{/each}}
+</section>
+{{/if}}
