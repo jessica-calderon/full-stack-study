@@ -12,6 +12,8 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     {{!-- font awesome icons cdn --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 <body>
   {{!-- navbar (created by ana - github.com/Anitinky13 ) --}}
@@ -54,16 +56,44 @@
     {{!--  footer start (can be changed if you want - jc) --}}
     
 <!-- Footer -->
-<footer class=" text-center text-white bg-purple">
-  <div class="container p-4">
-    <section class="mb-4">
-      {{!-- TODO add github usernames linked to github accts (jc) --}}
-      <p>
-        Group 4 © 2022
-      </p>
-    </section>
-  </div>
-</footer>
+<div class="container-fluid  py-3" style="background-color:#8EA4D2"> 
+  <div class="content"></div>
+  <footer class="row mt-3">
+    <div class="sozial col-xs-12 col-sm-6 col-sm-push-6">
+      <ul class="row">
+        <li class="col-xs-6 col-sm-2">
+          <a href="https://github.com/jessica-calderon/bantr.git">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="col-xs-6 col-sm-2">
+          <a href="https://www.linkedin.com/in/simply-ana/">
+           <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="col-xs-6 col-sm-2">
+          <a href="linkedin.com/in/Jessica-calderon-00">
+     <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="col-xs-6 col-sm-2">
+          <a href="https://www.linkedin.com/in/harrison-lewis-163b65147/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
+    </div><!-- Ende Sozial media -->
+    
+    <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
+      <p> &copy; BANTR 2022</p>
+    </div><!-- Ende Copyright -->
+    
+    <div class="impressum col-xs-12 col-sm-3 col-sm-pull-6">
+      <p>STUDY TOGETHER </p>
+      
+    </div><!-- Ende Impressum -->
+  </footer>
+</div>
     {{!-- footer end --}}
   
   {{!-- load logout.js script if logged in --}}

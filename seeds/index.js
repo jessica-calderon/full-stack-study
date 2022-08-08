@@ -1,6 +1,6 @@
 const seedUsers = require("./user-seeds");
 const seedPosts = require("./post-seeds");
-// const seedComments = require('./comment-seeds');
+const seedComments = require("./comment-seeds");
 // const seedVotes = require('./vote-seeds');
 
 const sequelize = require("../config/connection");
@@ -14,11 +14,11 @@ const seedAll = async () => {
   await seedPosts();
   console.log("--------------");
 
-  //   await seedComments();
-  //   console.log("--------------");
-  // TODO: uncomment if we add vote functionality (jc)
+  await seedComments();
+  console.log("--------------");
+  //   TODO: uncomment if we add vote functionality (jc)
   //   await seedVotes();
-  //   console.log('--------------');
+  //   console.log("--------------");
 
   process.exit(0);
 };
