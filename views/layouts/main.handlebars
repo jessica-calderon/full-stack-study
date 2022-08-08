@@ -28,7 +28,7 @@
                   </button>
                   {{!--  add logout/dashboard buttons if logged in, add login button if logged out (jc) --}}
                 {{#if loggedIn}}
-                    <button class="btn btn-secondary ml-auto mr-1"><a href="/dashboard" class="text-white link-white">Dashboard</a></button><button class="btn btn-secondary ml-auto mr-1" id="logout">Logout</button>
+                    <button class="btn btn-secondary ml-auto mr-1"><a href="/dashboard" class="text-white link-white">Dashboard <i class="fa-solid fa-gauge"></i></a></button><button class="btn btn-secondary ml-auto mr-1" id="logout">Logout <i class="fa-solid fa-right-from-bracket"></i></button>
                 {{else}}
                     <button class="btn btn-secondary ml-auto mr-1"><a href="/login" class="text-white link-white">Login</a></button>
                 {{/if}}
