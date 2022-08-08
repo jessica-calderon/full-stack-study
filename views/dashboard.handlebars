@@ -1,20 +1,25 @@
 {{!-- TODO: add dashboard html --}}
 <div class="container">
+      
       <div class="row">
             <div class="col-12">
                    <div class="row g-md-2">
                               <div class="col-8">
+                                     <div class="card">
+                                                  <div class="card-body">
                                     <div class="row mb-3">
-                                            
-                                          <form class="new-post-form" >Create New Post 
-                                          <input type="text" name="post-title" class="form-control" id="post-title" placeholder="Title">
+                                           
+                                          <h2 class="new-post-form w-100  mb-2" >Create New Post 
+                                          <input type="text" name="post-title" class="form-control mt-3" id="post-title" placeholder="Title">
                                     </div>
                                      <div class="row mb-3">
                                               <label for="post-body" class="form-label"></label>
                                                <textarea class="form-control" id="post-text" name="post-text" rows="5"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-outline-primary float-right  ">Submit</button>
-                                  </form>
+                                  </h2>
+                                  </div>
+                                  </div>
 {{#if posts.length}}
 
 
