@@ -1,4 +1,3 @@
-// TODO: add post seeds for testing purposes
 const { Post } = require("../models");
 const postdata = [
   {

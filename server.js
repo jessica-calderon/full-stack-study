@@ -16,11 +16,12 @@ const PORT = process.env.PORT || 3001;
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
+const hour = 1000 * 60 * 60;
+
 const sess = {
   secret: "Super secret secret",
-  // log out after 5 min inactivity
-  //TODO edit max age, make it at least an hour or more....(jc)
-  cookie: { maxAge: 300000 },
+  // log out after 6 hours
+  cookie: { maxAge: hour * 6, },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
