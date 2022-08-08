@@ -16,27 +16,28 @@
                                     <button type="submit" class="btn btn-outline-primary float-right">Submit</button>
                                   </form>
                            </div>
+                          
                            <div class="col-md-8 col-lg-4  mb-3 ">
                                     <div class="card h-100 chat-box">
                                           <div class="chat-body">
                                                 <h5 class="chat-title mb-2 p-2 ">Chat with online users</h5>
                                                  <section style="background-color: #eee; height:">
-    <div class="container h-100 py-2">
+         <div class="container h-100 py-2">
   
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-12">
-  <!-- chat header -->
-          <div class="card h-100">
-            <div class="card-header d-flex justify-content-between align-items-center p-3"
-              style="border-top: 4px solid #8EA4D2;">
-              <h5 class="mb-0">Chat messages</h5>
-              <div class="d-flex flex-row align-items-center">
-                <span class="badge bg-purple me-3">20</span>
-                <i class="fas fa-minus me-3 text-muted fa-xs"></i>
-                <i class="fas fa-comments me-3 text-muted fa-xs"></i>
-                <i class="fas fa-times text-muted fa-xs"></i>
-              </div>
-            </div>
+         <div class="row d-flex justify-content-center">
+           <div class="col-lg-12">
+              <!-- chat header -->
+              <div class="card h-100">
+               <div class="card-header d-flex justify-content-between align-items-center p-3"
+                      style="border-top: 4px solid #8EA4D2;">
+                        <h5 class="mb-0">Chat messages</h5>
+                      <div class="d-flex flex-row align-items-center">
+                        <span class="badge bg-purple me-3">20</span>
+                             <i class="fas fa-minus me-3 text-muted fa-xs"></i>
+                                <i class="fas fa-comments me-3 text-muted fa-xs"></i>
+                               <i class="fas fa-times text-muted fa-xs"></i>
+                </div>
+               </div>
             <!-- sent/received message container -->
             <div class="card-body h-100" id="message-container" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
   <!-- received -->
@@ -79,18 +80,25 @@
                                     </div>
 
                               </div>
-                  </div>
+              
+ </div>
                    
              </div>
-      </div>
-</div>
+ </div>
 
-{{!-- NOTE: only insert dashboard html starting at <div class="col mt-4"> --}}
+{{!-- NOTE: only insert dashboard html starting at < class="col mt-4"> --}}
 {{!-- we will need to add an {{#if posts.length}} section to this page too to show any posts the user has made here.... 
 i can help you with this ana -jc  --}}
 {{!-- can be something like this... --}}
+
+
+
+
+
 {{#if posts.length}}
-<section>
+
+
+    <section>
   <h2 class="m-3">Your Posts</h2>
   {{!-- shows all user created posts --}}
     {{#each posts as |post|}}
@@ -101,6 +109,11 @@ i can help you with this ana -jc  --}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link link-danger text-danger"><button class="btn styled-btn btn-outline-danger">Edit post <i class="fa-solid fa-pen-to-square"></i></button></a></div>
       </div>
     {{/each}}
-</section>
-{{/if}}
-<script src = "/javascript/add-post.js"></script>
+   </section>
+ 
+    
+
+
+</div>
+{{/if}} 
+<script src = "/javascript/add-post.js"></script> 
