@@ -1,3 +1,5 @@
+// moved this refactored logic to server.js 
+// refactored by peter TA 
 // var { server, app } = require('./expressHandler')
 
 // var io = require('socket.io')(server); // {cors: {origin: "http://localhost:3000", method: ["GET", "POST"]}}
