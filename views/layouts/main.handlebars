@@ -20,12 +20,14 @@
 <header>
       <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #8EA4D2;">
             <div class="container-fluid">
-                  <a class="navbar-brand" href="/">BANTR</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+  <a class="navbar-brand" href="/">
+<img src="/logo.png" width="40px"> BANTR
+  </a>
+                  {{!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                  </button>
+                  </button> --}}
                   {{!--  add logout/dashboard buttons if logged in, add login button if logged out (jc) --}}
                 {{#if loggedIn}}
                     <button class="btn btn-secondary ml-auto mr-1"><a href="/dashboard" class="text-white link-white">Dashboard <i class="fa-solid fa-gauge"></i></a></button><button class="btn btn-secondary ml-auto mr-1" id="logout">Logout <i class="fa-solid fa-right-from-bracket"></i></button>
@@ -102,9 +104,7 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
-    <a class="text-dark">BANTR</a>
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);"><a class="text-dark"><img src="/logo.png" width="30px"> BANTR</a> © 2022 
   </div>
   <!-- Copyright -->
 </footer>
