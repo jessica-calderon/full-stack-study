@@ -6,15 +6,15 @@
                               <div class="col-8">
                                     <div class="row mb-3">
                                             
-                                          <form class="new-post-form">Create New Post</form>
-                                          <input type="text" class="form-control" id="post-title" placeholder="Title">
+                                          <form class="new-post-form" >Create New Post 
+                                          <input type="text" name="post-title" class="form-control" id="post-title" placeholder="Title">
                                     </div>
                                      <div class="row mb-3">
                                               <label for="post-body" class="form-label"></label>
-                                               <textarea class="form-control" id="post-body" rows="5"></textarea>
+                                               <textarea class="form-control" id="post-text" name="post-text" rows="5"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-outline-primary float-right">Submit</button>
-                                   
+                                  </form>
                            </div>
                            <div class="col-md-8 col-lg-4  mb-3 ">
                                     <div class="card h-100 chat-box">
@@ -103,3 +103,4 @@ i can help you with this ana -jc  --}}
     {{/each}}
 </section>
 {{/if}}
+<script src = "/javascript/add-post.js"></script>
