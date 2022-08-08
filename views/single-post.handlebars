@@ -1,0 +1,20 @@
+{{!-- pulls post-info handlebars --}}
+{{> post-info post}}
+{{!-- shows option to comment if user is logged in --}}
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea placeholder="Enter your comment here" class="form-control" style="min-width: 100%" name="comment-body"></textarea>
+  </div>
+
+  <div class="text-center justify-content-center">
+    <button type="submit" class="btn styled-btn btn-dark my-3">Add a Comment <i class="fa-solid fa-plus"></i></button>
+  </div>
+</form>
+{{/if}}
+{{!-- show all comments for post --}}
+{{> comments post.comments}}
+{{!-- load public comments js if user is logged in --}}
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

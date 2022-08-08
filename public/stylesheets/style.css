@@ -1,0 +1,66 @@
+body,
+html {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #49516f;
+}
+/* make links not underlined */
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+/* no bullets on lists */
+ul {
+  list-style: none;
+}
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+/* add bg and color class for purple we want to use  */
+.bg-purple {
+  background-color: #8ea4d2;
+}
+.color-purple {
+  color: #8ea4d2;
+}
+/* for navbar  */
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  display: inline-block;
+  float: none;
+}
+
+/* .send-button {
+  background-color: #496f5d;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 7px;
+  padding-left: 7px;
+  margin-right: 5px;
+}
+.message-box {
+  margin-top: 10px;
+}
+.others-message-box {
+}
+.my-message-box {
+  text-align: right;
+  background: white;
+}
+.message {
+  max-width: 70%;
+  border-radius: 5%;
+  padding: 5px;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.my-message {
+  float: right;
+  background: #8ea4d2;
+} */

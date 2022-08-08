@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS bantr_db;
+
+CREATE DATABASE bantr_db;
