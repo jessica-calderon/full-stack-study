@@ -11,9 +11,9 @@
       </p>
     </div>
     <div class="card-footer bg-light">
-      <small class="text-muted">
-        Posted by {{user.username}} on <i class="fa-solid fa-calendar"></i>
-        {{format_date created_at}} |<a href="/post/{{id}}" class="text-muted">
+      <small class="text-muted">Posted by {{user.username}} on <i class="fa-solid fa-calendar"></i>
+        {{format_date created_at}} |
+        <a href="/post/{{id}}" class="text-muted">
           <i class="fa-solid fa-comment-dots"></i>
           {{comments.length}} {{format_plural "comment" comments.length}}
         </a>

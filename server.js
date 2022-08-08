@@ -43,6 +43,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(require("./controllers/"));
+// route to use images folder in handlebars
+app.use(express.static("images"));
+
+// Route to display dynamic src images
+app.get("/dashboard", (req, res) => {
+  imageList = [];
+  imageList.push({ src: "/logo.png", name: "logo" });
+  imageList.push({ src: "/brand.png", name: "brand" });
+  // imageList.push({ src: "icons/react.png", name: "react" });
+  res.render("/dashboard", { imageList: imageList });
+})
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(process.env.PORT || 3001, function () {

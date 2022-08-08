@@ -1,8 +1,31 @@
-<div class="container"><div class="row"><div class="col align-self-center"><h2 class="text-center">Recent Blog Posts</h2></div></div></div>
-<ul class="post-list">
+<!-- CTA Section -->
+<div class="cta" style="background-color: #4c9f70">
+  <div class="container space-2">
+    <div class="row align-items-md-center text-center text-md-left">
+      <div class="col-md-2 d-none d-md-inline-block">
+        <img class="img-fluid" src="logo.png" alt="Brand">
+      </div>
+      <div class="col-md-7 mb-4 mb-md-0">
+        <div class="pl-lg-4">
+          <h2 class="text-white mb-1 text-responsive">Study together with BANTR</h2>
+          <p class="lead text-black mb-0 text-responsive">Chat with online learners. Ask a question. Share valuable resources. Build a community.</p>
+        </div>
+      </div>
+      <div class="m-auto row btn-group text-center" role="group"> 
+      {{!-- <div class="col-md-3 text-md-right mb-2"> --}}
+        <a class="btn btn-light mr-1" href="/login">Login / Sign Up</a><br />
+        <a class="btn btn-light btn-outline" href="/dashboard">Create a Post</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End CTA Section -->
+<div class="container mt-3"><div class="row"><div class="col align-self-center"><h2 class="text-center">Latest Posts</h2></div></div></div>
+<span class="post-list">
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
   </li>
   {{/each}}
-</ul>
+</span>
