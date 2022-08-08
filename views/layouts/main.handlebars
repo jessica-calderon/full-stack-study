@@ -55,46 +55,64 @@
     </main>
     {{!--  footer start (can be changed if you want - jc) --}}
     
-<!-- Footer -->
-<div class="container-fluid  py-3" style="background-color:#8EA4D2"> 
-  <div class="content"></div>
-  <footer class="row mt-3">
-    <div class="sozial col-xs-12 col-sm-6 col-sm-push-6">
-      <ul class="row">
-        <li class="col-xs-6 col-sm-2">
-          <a href="https://github.com/jessica-calderon/bantr.git">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li class="col-xs-6 col-sm-2">
-          <a href="https://www.linkedin.com/in/simply-ana/">
-           <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="col-xs-6 col-sm-2">
-          <a href="linkedin.com/in/Jessica-calderon-00">
-     <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li class="col-xs-6 col-sm-2">
-          <a href="https://www.linkedin.com/in/harrison-lewis-163b65147/">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-      </ul>
-    </div><!-- Ende Sozial media -->
+
+
+ 
+
+  <footer class="text-center text-white" style="background-color: #8EA4D2">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+       <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.linkedin.com/in/simply-ana/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+  <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="linkedin.com/in/Jessica-calderon-00"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.linkedin.com/in/harrison-lewis-163b65147/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://github.com/jessica-calderon/bantr.git"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-dark">BANTR</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
+
+
     
-    <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
-      <p> &copy; BANTR 2022</p>
-    </div><!-- Ende Copyright -->
-    
-    <div class="impressum col-xs-12 col-sm-3 col-sm-pull-6">
-      <p>STUDY TOGETHER </p>
-      
-    </div><!-- Ende Impressum -->
-  </footer>
-</div>
-    {{!-- footer end --}}
+ 
   
   {{!-- load logout.js script if logged in --}}
   {{#if loggedIn}}
