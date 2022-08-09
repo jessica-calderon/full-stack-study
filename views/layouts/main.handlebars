@@ -14,23 +14,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   {{!-- google fonts cdn --}}
 <link href="https://fonts.googleapis.com/css?family=Lato|Slabo+13px" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/stylesheets/jquery.chatbubble.min.css">
 
 
 </head>
 <body class="d-flex flex-column min-vh-100">
   {{!-- navbar (created by ana - github.com/Anitinky13 ) --}}
-<header>
+<header class="sticky-top">
       <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #8EA4D2;">
             <div class="container-fluid">
   <a class="navbar-brand" href="/">
 <img src="/logo.png" width="40px"> BANTR
   </a>
-                  {{!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                  </button> --}}
                   {{!--  add logout/dashboard buttons if logged in, add login button if logged out (jc) --}}
+                        <div class="ml-auto my-auto row btn-group text-end" role="group"> 
                 {{#if loggedIn}}
                     <button class="btn btn-secondary ml-auto mr-1"><a href="/dashboard" class="text-white link-white">Dashboard <i class="fa-solid fa-gauge"></i></a></button><button class="btn btn-secondary ml-auto mr-1" id="logout">Logout <i class="fa-solid fa-right-from-bracket"></i></button>
                 {{else}}
@@ -71,7 +71,7 @@
        <!-- Linkedin -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.linkedin.com/in/simply-ana/"
+        href="https://www.linkedin.com/in/simply-ana/" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-linkedin"></i
@@ -79,7 +79,7 @@
   <!-- Linkedin -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="linkedin.com/in/Jessica-calderon-00"
+        href="linkedin.com/in/Jessica-calderon-00" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-linkedin"></i
@@ -87,7 +87,7 @@
       <!-- Linkedin -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.linkedin.com/in/harrison-lewis-163b65147/"
+        href="https://www.linkedin.com/in/harrison-lewis-163b65147/" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-linkedin"></i
@@ -95,7 +95,7 @@
       <!-- Github -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://github.com/jessica-calderon/bantr.git"
+        href="https://github.com/jessica-calderon/bantr.git" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-github"></i

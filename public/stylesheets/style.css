@@ -23,14 +23,10 @@ h5,
 h6,
 link,
 a {
-  Font-Family: 'Slabo 13px', Serif;
-  /* Font-Size: 46px; */
+  font-family: 'Russo One', sans-serif;
+
 }
 
-
-Font-Size: 48px;
-Font-Family: 'Lato', Sans-Serif;
-Font-Size: 16px;
 
 /* make links not underlined */
 a {
@@ -50,6 +46,9 @@ main {
 /* add bg and color class for purple we want to use  */
 .bg-purple {
   background-color: #8ea4d2;
+}
+.bg-dark-purple {
+  background-color: #7283A8;
 }
 .color-purple {
   color: #8ea4d2;
