@@ -1,14 +1,22 @@
-<div class="comments">
+<div class="card border border-dark">
+  <div class="card-header">
+    <h3>
+      <i class="fa-solid fa-comment-dots"></i> Comments
+    </h3>
+  </div>
   {{#each this}}
-    <section class="comment">
-      <div class="meta">
-        {{user.username}}
-        on
-        {{format_date created_at}}
+    <div class="card-body bg-dark-purple comment">
+      <div class="row meta">
+        <div class="card-body bg-light mt-2 mx-2 border border-dark">
+          <p class="border border-dark p-2">
+            {{comment_text}}
+            <p class="card-footer border border-dark">
+            <small class="text-muted">
+              Comment from {{user.username}} on {{format_date created_at}}
+            </small>
+          </p>
+        </div>
       </div>
-      <div class="text">
-        {{comment_text}}
-      </div>
-    </section>
+    </div>
   {{/each}}
 </div>

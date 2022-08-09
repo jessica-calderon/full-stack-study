@@ -21,18 +21,14 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
   {{!-- navbar (created by ana - github.com/Anitinky13 ) --}}
-<header>
+<header class="sticky-top">
       <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #8EA4D2;">
             <div class="container-fluid">
   <a class="navbar-brand" href="/">
 <img src="/logo.png" width="40px"> BANTR
   </a>
-                  {{!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                  </button> --}}
                   {{!--  add logout/dashboard buttons if logged in, add login button if logged out (jc) --}}
+                        <div class="ml-auto my-auto row btn-group text-end" role="group"> 
                 {{#if loggedIn}}
                     <button class="btn btn-secondary ml-auto mr-1"><a href="/dashboard" class="text-white link-white">Dashboard <i class="fa-solid fa-gauge"></i></a></button><button class="btn btn-secondary ml-auto mr-1" id="logout">Logout <i class="fa-solid fa-right-from-bracket"></i></button>
                 {{else}}
@@ -59,12 +55,7 @@
       {{!-- homepage handlebars templates go here dynamically --}}
       {{{ body }}}
     </main>
-    {{!--  footer start (can be changed if you want - jc) --}}
-    
-
-
- 
-
+    {{!--  footer start  --}} 
   <footer class="text-center text-white mt-auto" style="background-color: #8EA4D2">
   <!-- Grid container -->
   <div class="container pt-4">
@@ -73,7 +64,7 @@
        <!-- Linkedin -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.linkedin.com/in/simply-ana/"
+        href="https://www.linkedin.com/in/simply-ana/" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-linkedin"></i
@@ -81,7 +72,7 @@
   <!-- Linkedin -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="linkedin.com/in/Jessica-calderon-00"
+        href="linkedin.com/in/Jessica-calderon-00" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-linkedin"></i
@@ -89,7 +80,7 @@
       <!-- Linkedin -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.linkedin.com/in/harrison-lewis-163b65147/"
+        href="https://www.linkedin.com/in/harrison-lewis-163b65147/" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-linkedin"></i
@@ -97,7 +88,7 @@
       <!-- Github -->
       <a
         class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://github.com/jessica-calderon/bantr.git"
+        href="https://github.com/jessica-calderon/bantr.git" target="_blank"
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fab fa-github"></i
@@ -112,12 +103,7 @@
   </div>
   <!-- Copyright -->
 </footer>
-  
-
-
     
- 
-  
   {{!-- load logout.js script if logged in --}}
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
