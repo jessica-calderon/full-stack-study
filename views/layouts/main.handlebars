@@ -34,6 +34,13 @@
   </a>
                   {{!--  add logout/dashboard buttons if logged in, add login button if logged out (jc) --}}
                         <div class="ml-auto my-auto row btn-group text-end" role="group"> 
+                          <div class="form-check form-switch ms-auto mt-3 me-3">
+  {{!-- dark mode toggle  --}}
+  <label class="form-check-label ms-3" for="lightSwitch">
+<h4><i class="fa-solid fa-lightbulb mr-3 mb-1"></i></h4>
+  </label>
+  <input class="form-check-input mx-auto" type="checkbox" id="lightSwitch" />
+</div>
                 {{#if loggedIn}}
                     <button class="btn btn-secondary ml-auto mr-1"><a href="/dashboard" class="text-white link-white">Dashboard <i class="fa-solid fa-gauge"></i></a></button><button class="btn btn-secondary ml-auto mr-1" id="logout">Logout <i class="fa-solid fa-right-from-bracket"></i></button>
                 {{else}}
@@ -113,6 +120,7 @@
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
+  <script src="/javascript/switch.js"></script>
   {{!-- jquery, bootstrap, and font awesome scripts --}}
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
