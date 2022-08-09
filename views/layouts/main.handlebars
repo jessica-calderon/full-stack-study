@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+{{!-- chat bubble stylesheet --}}
 <link rel="stylesheet" href="/stylesheets/jquery.chatbubble.min.css">
 
 
@@ -57,12 +58,7 @@
       {{!-- homepage handlebars templates go here dynamically --}}
       {{{ body }}}
     </main>
-    {{!--  footer start (can be changed if you want - jc) --}}
-    
-
-
- 
-
+    {{!--  footer start  --}} 
   <footer class="text-center text-white mt-auto" style="background-color: #8EA4D2">
   <!-- Grid container -->
   <div class="container pt-4">
@@ -110,12 +106,7 @@
   </div>
   <!-- Copyright -->
 </footer>
-  
-
-
     
- 
-  
   {{!-- load logout.js script if logged in --}}
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
