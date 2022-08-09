@@ -56,11 +56,11 @@
 
     document.body.classList.add('bg-light');
 
-    if (document.body.classList.contains('text-light')) {
-      document.body.classList.replace('text-light', 'text-dark');
-    } else {
-      document.body.classList.add('text-dark');
-    }
+    // if (document.body.classList.contains('text-light')) {
+    //   document.body.classList.replace('text-light', 'text-dark');
+    // } else {
+    //   document.body.classList.add('text-dark');
+    // }
 
     // Tables
     var tables = document.querySelectorAll('table');
