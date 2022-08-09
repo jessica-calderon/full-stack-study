@@ -70,25 +70,20 @@ Apache-2.0
 N/A
 
 ## Screenshots
-![IMG_6523](https://user-images.githubusercontent.com/104174334/183732395-92cb20ed-042c-4709-b6b0-814b60d85f38.png)
 
+![IMG_6523](https://user-images.githubusercontent.com/104174334/183732395-92cb20ed-042c-4709-b6b0-814b60d85f38.png)
 
 ![IMG_6524](https://user-images.githubusercontent.com/104174334/183732533-a83b5285-9e93-4741-85cb-f919c84ce579.jpeg)
 
-
-
 ![IMG_6526](https://user-images.githubusercontent.com/104174334/183732600-c02d91ae-a91a-4447-9945-c71788c7fb78.jpeg)
-
-
 
 ![brand](https://user-images.githubusercontent.com/104174334/183732651-bc31f313-52e2-4d3e-994b-65d3b5a0cfa1.png)
 
 ![logo](https://user-images.githubusercontent.com/104174334/183732697-b5b2c65a-e0b7-4a30-aebd-8b646edd1dc9.png)
 
-
 ## Live Preview
 
-[heroku](https://sheltered-forest-77787.herokuapp.com/)
+[heroku](https://bantr-study.herokuapp.com/)
 
 ## Questions
 
