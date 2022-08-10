@@ -49,12 +49,19 @@ app.use(require("./controllers/"));
 app.use(express.static("images"));
 
 // Route to display dynamic src images
-app.get("/dashboard", (req, res) => {
+app.get("/", (req, res) => {
   imageList = [];
   imageList.push({ src: "/logo.png", name: "logo" });
   imageList.push({ src: "/brand.png", name: "brand" });
-  // imageList.push({ src: "icons/react.png", name: "react" });
-  res.render("/dashboard", { imageList: imageList });
+  imageList.push({ src: "/black_logo.png", name: "black_brand" });
+  res.render("/", { imageList: imageList });
+})
+app.get("/post", (req, res) => {
+  imageList = [];
+  imageList.push({ src: "/logo.png", name: "logo" });
+  imageList.push({ src: "/brand.png", name: "brand" });
+  imageList.push({ src: "/black_logo.png", name: "black_brand" });
+  res.render("/post", { imageList: imageList });
 })
 
 sequelize.sync({ force: false }).then(() => {
