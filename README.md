@@ -1,4 +1,5 @@
 # BANTR
+<img src="https://user-images.githubusercontent.com/104174334/183732697-b5b2c65a-e0b7-4a30-aebd-8b646edd1dc9.png" width=100px;>
 
 Project 2 | Group 4
 
@@ -19,7 +20,7 @@ An MVC-CMS-style technology blog where students can sign-up, login, view and pos
 - [Questions](#questions)
 - [Reach Out](#reachout)
 
-  ## Built With
+## Built With
 
   HTML,
   JavaScript,
@@ -60,30 +61,24 @@ Pull requests are required!
 
 ## License
 
-Apache-2.0
-(https://opensource.org/licenses/Apache-2.0)
-Apache-2.0
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 [Link to Apache-2.0 license](https://opensource.org/licenses/Apache-2.0)
 
 ## Tests
 
 N/A
 
-## Screenshots
+## Screenshot
+<a href="https://bantr-study.herokuapp.com"><img src="./images/bantr-demo.gif" /></a>
 
-![IMG_6523](https://user-images.githubusercontent.com/104174334/183732395-92cb20ed-042c-4709-b6b0-814b60d85f38.png)
 
-![IMG_6524](https://user-images.githubusercontent.com/104174334/183732533-a83b5285-9e93-4741-85cb-f919c84ce579.jpeg)
 
-![IMG_6526](https://user-images.githubusercontent.com/104174334/183732600-c02d91ae-a91a-4447-9945-c71788c7fb78.jpeg)
-
-![brand](https://user-images.githubusercontent.com/104174334/183732651-bc31f313-52e2-4d3e-994b-65d3b5a0cfa1.png)
-
-![logo](https://user-images.githubusercontent.com/104174334/183732697-b5b2c65a-e0b7-4a30-aebd-8b646edd1dc9.png)
 
 ## Live Preview
-
-[heroku](https://bantr-study.herokuapp.com/)
+Click the link to see our deployed website: 
+[Heroku](https://bantr-study.herokuapp.com/)
 
 ## Questions
 
@@ -96,3 +91,6 @@ Email: calderonjessica13@yahoo.com
 
 GitHub: Anitinky13
 Email: ayefanova1@gmail.com
+
+Github: Stratiz
+Email: therealstratiz@gmail.com
