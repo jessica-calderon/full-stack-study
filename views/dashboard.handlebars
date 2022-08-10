@@ -67,23 +67,6 @@
 
                       <div class="card-body" id="message-container" style="position: relative;">
                         <div data-mdb-perfect-scrollbar="true" style="overflow-y:scroll; height:300px;" scrolling="auto" id="chat-container">
-                          <!-- received -->
-
-                          <div class="d-flex flex-row justify-content-start">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
-                              alt="avatar 1" style="width: 45px; height: 100%;">
-                            <div>
-                              <p class="small p-2 ms-3 mb-3 rounded-3" style="background-color: #f5f6f7;">This is a received message.</p>
-                            </div>
-                          </div>
-                          <!-- sent -->
-                          <div class="d-flex flex-row justify-content-end mb-4 pt-1">
-                            <div>
-                              <p class="small p-2 me-3 mb-3 text-white rounded-3 bg-purple">This is a sent message!</p>
-                            </div>
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                              alt="avatar 1" style="width: 45px; height: 100%;">
-                          </div>
                         </div>
                         <!-- message input container -->
                         <div class="card-footer w-100 text-muted d-flex justify-content-start align-items-center">
@@ -106,11 +89,6 @@
               </div>
             </div>
           </div>
-          {{!-- NOTE: only insert dashboard html starting at < class="col mt-4"> --}}
-            {{!-- we will need to add an {{#if posts.length}} section to this page too to show any posts the user has
-            made here....
-            i can help you with this ana -jc --}}
-            {{!-- can be something like this... --}}
             <script src="/javascript/add-post.js"></script>
             <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
