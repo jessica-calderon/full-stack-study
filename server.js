@@ -1,10 +1,4 @@
 // Dependencies
-// saving this socket logic for last (jc)
-// const {server, app} = require('./utils/expressHandler');
-// const socketHandler = require('./utils/socketHandler');
-
-// console.log("Server starting...")
-
 const path = require("path");
 const express = require("express");
 const session = require("express-session");
